@@ -1,6 +1,6 @@
+Option Explicit
 On Error Resume Next
 
-Option Explicit
 
 Dim fso, shell, http
 Set fso = CreateObject("Scripting.FileSystemObject")
